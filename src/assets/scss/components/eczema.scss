@@ -1,0 +1,138 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.eczema  {
+    margin-top: 31.5rem;
+    margin-bottom: 7.8rem;
+
+    .container {
+        position: relative;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        padding-left: 6.2rem;
+    }
+
+    &__info {
+        margin-left: auto;
+        padding-top: 8.5rem;
+        max-width: 47rem;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        line-height: 125%;
+        color: $c-secondary;
+        font-weight: normal;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 178%;
+        padding-bottom: 3.2rem;
+    }
+}
+
+ h2 { 
+    padding-top: 2.1rem;
+    padding-bottom: 3.4rem;
+    font-size: 4rem;
+    line-height: 117%;
+    max-width: 40rem;
+    font-weight: normal;
+ }
+
+ @media screen and (max-width: $md) {
+    .eczema {
+        margin-top: 8rem;
+        &__img {
+            padding-left: 1.6rem;
+            max-width: 40%;
+        }
+        &__info {
+            margin-left: auto;
+            max-width: 43rem;
+            padding-top: 3rem;
+        }
+
+        &__title {
+            font-size: 3.5rem;  
+        }
+    }
+ }
+
+ @media screen and (max-width: $sm) {
+    .eczema {  
+        margin-top: 4rem;
+
+        &__img {
+            padding-left: 0;
+            max-width: 40%;
+        }
+        &__info {
+            max-width: 32rem;
+            margin-left: auto;
+            padding-top: 2rem;
+        }
+        &__title {
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+        }
+
+        &__text {
+            font-size: 1.55rem;
+            padding-bottom: 1rem;
+        }
+    }
+    h2 {
+        padding-top: 0;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+ }
+
+ @media screen and (max-width: $xs) {
+    .eczema {
+
+        margin-bottom: 2rem;
+        &__img {
+            position: relative;
+            max-width: 50%;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__info {
+            max-width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            padding-bottom: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__row {
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+ }

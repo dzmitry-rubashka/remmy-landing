@@ -1,0 +1,197 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.first-section {
+    padding-top: 1.4rem;
+
+    .container {
+        position: relative;
+    }
+
+    &__row {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__img {
+        position: absolute;
+        right: 6.5rem;
+        max-width: 40vw;
+    }
+}
+
+.healthy-skin {
+    max-width: 50rem;
+    padding-top: 11.2rem;
+
+    &__answers {
+        font-size: 4.3rem;
+        line-height: 115%;
+        font-weight: normal;
+        margin-bottom: 8.2rem;
+    }
+
+    &__skincare {
+        font-size: 1.8rem;
+        line-height: 178%;
+        max-width: 48.5rem;
+        padding-bottom: 2.2rem;
+    }
+
+    &__button {
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 125%;
+        color: #FFFFFF;
+        background-color: $c-secondary;
+        padding: 1.9rem 3rem;
+        min-width: 17.3rem;
+        border-radius: 1.2rem;
+    }
+
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 1.2rem 1.2rem 1.2rem 2rem;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    box-shadow: 0px 8px 24px rgba(7, 19, 48, 0.06);
+}
+
+#email {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 106%;
+    max-width: 25rem;
+    padding-left: 0.9rem;
+    margin-right: 7.2rem;
+    border: none;
+}
+
+@media screen and (max-width: $md) {
+    .healthy-skin {
+        padding-top: 4rem;
+        max-width: 43rem;
+        padding-left: 1rem;
+        
+        &__answers {
+            font-size: 3.7rem;
+            margin-bottom: 4rem;
+        }
+
+        &__button {
+            padding: 1.2rem 1rem;
+            min-width: 14rem;
+        }
+    }
+
+    .first-section {
+        &__img {
+            right: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .healthy-skin {
+        padding-top: 2rem;
+        max-width: 37rem;
+
+        &__answers {
+            font-size: 3.1rem;
+            margin-bottom: 2rem;
+        }
+
+        &__skincare {
+            font-size: 1.65rem;
+        }
+
+        &__button {
+            font-size: 1.4rem;
+            min-width: 9.3rem;
+        }
+    }
+
+    .first-section {
+        &__img {
+            right: 1rem;
+            width: 37vw;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: $xs) {
+    .healthy-skin {
+        max-width: 100%;
+
+        &__answers {
+            font-size: 2rem;
+        }
+
+        &__skincare {
+            font-size: 1.4rem;
+            padding-bottom: 1.2rem;
+            max-width: 100%;
+        }
+
+        &__button {
+            font-size: 1.4rem;
+            min-width: 5.3rem;
+            padding: 0.6rem 1rem;
+        }
+    }
+    .first-section {
+        &__img {
+            position: relative;
+            padding-top: 1rem;
+            width: 40%;
+        }
+
+        &__row {
+            max-width: 100%;
+            text-align: center;
+            display: block;
+        }
+    }
+    .email {
+        display: inline-block;
+        max-width: 22rem;
+        text-align: center;
+        padding: 0.6rem;
+        
+    }
+
+    #email {
+        text-align: center;
+        margin: 0;
+        padding: 0 0 1rem 0;
+    }
+}
+

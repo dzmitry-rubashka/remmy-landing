@@ -1,0 +1,92 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.robynkutka {
+    .container {
+        position: relative;
+    }
+
+    &__about {
+        margin-top: 6.2rem;
+        margin-left: 35rem;
+    }
+
+    &__info {
+        font-size: 1.8rem;
+        line-height: 178%;
+        color: rgba(7, 19, 48, 0.6);
+        font-style: normal;
+        font-weight: normal;
+        margin-bottom: 2.1rem;
+        display: inline-block;
+        margin-left: 1.3rem;
+    }
+
+    &__img {
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+}
+
+h4 {
+    font-size: 2.7rem;
+    line-height: 207%;
+    text-align: center;
+    color: $c-text2;
+    font-weight: normal;
+    max-width: 69rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23.2rem;
+    padding-left: 6.1rem;
+}
+
+@media screen and (max-width: $md) {
+    h4 {
+        margin-top: 3rem;
+        font-size: 2.2rem;
+    }
+
+    .robynkutka {
+        &__about {
+            margin-top: auto;
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+        } 
+    }
+}
+
+@media screen and (max-width: $sm) {
+    h4 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    &__img {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    h4 {
+        margin-top: auto;
+        font-size: 1.5rem;
+    }
+    
+    .robynkutka {
+        &__info {
+            font-size: 1.6rem;
+        }
+
+        &__about {
+            padding-top: 0;
+        }
+
+        &__img {
+            padding-top: 0;
+        }
+        
+    }
+}

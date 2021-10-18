@@ -1,0 +1,252 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.acne {
+    padding-top: 11.7rem;
+
+    .container {
+        position: relative;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        &--reverse {
+            margin-top: 13.5rem;
+            flex-direction: row-reverse;
+            margin-bottom: 10.7rem;
+        }
+    }
+
+    &__info {
+        max-width: 47rem;
+    
+        &--reverse {
+            padding-top: 1rem;
+            margin-left: 6.4rem;
+        }
+    }
+
+    &__img {
+        padding-left: 6.2rem;
+
+        &--reverse {
+            margin-right: 4.5rem;
+        }
+    }
+    
+    &__theme {
+        font-size: 1.6rem;
+        line-height: 125%;
+        color: $c-secondary;
+        margin-top: 10.7rem;
+        padding-bottom: 1.5rem;
+
+        &--support {
+            margin-top: 4.5rem;
+        }
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 117%;
+        padding-bottom: 4rem;
+
+        &--reverse {
+            max-width: 35rem;
+        }
+
+        &--support {
+            max-width: 43rem;
+        }
+    }
+
+    &__text1 {
+        font-size: 1.8rem;
+        line-height: 178%;
+        padding-bottom: 3.3rem;
+    }
+
+    &__text2 {
+        max-width: 45rem;
+        font-size: 1.8rem;
+        line-height: 178%;
+
+        &--reverse {
+            
+        }
+    }
+
+}
+
+.research {
+    margin-top: 0.6rem;
+
+    &__row {
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    &__img {
+        display: inline-block;
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 160%;
+        padding-bottom: 0.8rem;
+        padding-left: 2.4rem;
+    }
+
+}
+
+.discovering {
+    &__row {
+        align-items: center;
+        margin-top: 4.8rem;
+    }
+
+    &__img {
+        display: inline-block;
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 160%;
+        padding-bottom: 0.8rem;
+        padding-left: 2.4rem;
+    }
+
+}
+
+@media screen and (max-width: $md) {
+    .acne {
+        padding-top: 1rem;
+
+        &__info {
+            width: 70%;
+            margin-right: 2rem;
+            
+            &--reverse {
+                width: 70%;
+                margin-left: 1rem;
+            }
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__text1, &__text2 {
+            font-size: 1.6rem;
+        }
+
+        &__img {
+            width: 30%;
+            padding-left: 0;
+            margin-left: 1rem;
+            
+            &--reverse {
+                margin-right: 0;
+                width: 30%;
+            }
+        }
+
+        &__img-new {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        &__theme {
+            margin-top: 2rem;
+        }
+
+        &__row {
+            &--reverse {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    } 
+
+    .discovering__row {
+        margin-top: 1rem;
+    }
+
+    .research__row {
+        margin-top: -2rem;
+    }
+
+    
+}
+
+@media screen and (max-width: $sm) {
+    .acne {
+        &__info {
+            width: 65%;
+            margin-right: 1rem;
+            
+            &--reverse {
+                width: 65%;
+                margin-left: 1rem;
+            }
+        }
+
+        &__img {
+            width: 25%;
+            padding-left: 0;
+            margin-left: 1rem;
+            
+            &--reverse {
+                margin-right: 0;
+                width: 25%;
+            }
+        }
+        &__title {
+            font-size: 2rem;
+            padding-bottom: 0.8rem;
+        }
+
+        &__theme {
+            padding-bottom: 0.7rem;
+        }
+
+        &__text1, &__text2 {
+            font-size: 1.5rem;
+            padding-bottom: 0.7rem;
+        }
+    }
+
+    .research__text, .discovering__text {
+        font-size: 1.5rem;
+    }
+
+    .research__row {
+        padding-top: 1.5rem;
+    }
+
+    
+}
+
+@media screen and (max-width: $xs) {
+    .acne {
+        &__row {
+            display: block;   
+        }
+
+        &__img {
+            width: 50%;
+            margin: auto;
+        }
+
+        &__info {
+            width: 100%;
+            margin: auto;
+            padding-right: 0;
+        }
+    }
+}

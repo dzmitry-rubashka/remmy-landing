@@ -1,0 +1,15 @@
+section.treatment
+    div.container
+        h3 Discover new treatment options through social biohacking. Here’s how
+        mixin item(number, title, text, img)
+            div.treatment__row
+                div.treatment__info
+                    p.item__number=number
+                    p.item__title=title
+                    p.item__text=text
+                div.treatment__img
+                    img.img-right(src=img, alt="justrandompic")
+        +item('1', 'Track a condition', 'Start by using Remmy to track the progress of your skin condition over time. This will help establish a baseline in which our algorithm can calculate the helpfulness of your treatments.', './assets/imgs/acne.png')
+        +item('2', 'Join a treatment', 'Join a biohacking treatment by following the instructions, joining the discussion, and by marking in Remmy every time you administer the treatment. We’ll then be able to calculate an average effectiveness score from everyone’s participation for this treatment.', './assets/imgs/sinus-infection.png')
+        +item('3', 'Help others', 'Help others find relief and healing by sharing the biohacking experiments and treatments that have worked for you. Then discuss, chat, and collaborate to figure out how to maximize the effectiveness of your treatments.', './assets/imgs/skin-healthscore.png')
+        

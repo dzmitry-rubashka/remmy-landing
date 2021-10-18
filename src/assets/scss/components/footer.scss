@@ -1,0 +1,80 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.footer {
+
+    margin-top: 24.5rem;
+    margin-bottom: 1.5rem;
+
+    .container {
+        position: relative;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 120%;
+        color: rgba(7, 19, 48, 0.5);
+    }
+
+    &__contactinfo {
+        font-size: 1.5rem;
+        line-height: 120%;
+        color: rgba(7, 19, 48, 0.5);
+        margin-left: 4rem;
+    }
+
+    &__contact {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: $md) {
+
+    .footer {
+        margin-top: 5rem;
+
+        &__contact {
+            margin-left: auto;
+        }
+
+        &__text {
+            font-size: 1rem;
+        }
+
+        &__contactinfo {
+            font-size: 1.2rem;
+        }
+    }
+  
+}
+
+@media screen and (max-width: $xs) {
+    .footer {
+        margin-top: 3rem;
+
+        &__contactinfo {
+            
+            margin: 2rem; 
+        }
+
+        &__contact {
+            text-align: center;
+            margin-top: 2rem;
+            
+        }
+
+        &__flex {
+            display: block;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}

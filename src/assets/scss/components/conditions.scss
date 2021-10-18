@@ -1,0 +1,230 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.conditions {
+    padding-top: 24rem;
+
+    .container {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        line-height: 125%;
+        text-align: center;
+        color: $c-secondary
+    }
+
+    &__text {
+        margin-top: 1.5rem;
+        font-size: 4rem;
+        line-height: 117%;
+        text-align: center;   
+    }
+
+    &__description {
+        font-size: 1.8rem;
+        line-height: 178%;
+        text-align: center;
+        margin-top: 3.2rem;
+    }
+
+    &__newtext {
+        padding-top: 3.4rem;
+        font-size: 1.6rem;
+        line-height: 119%;
+    }
+
+    &__img-light-blue {
+        background-color:#7FDDF0;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-blue {
+        background-color:#5FAEEC;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-violet {
+        background-color: #9B78FD;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-pink {
+        background-color: #EF9CD0;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-orange {
+        background-color: #F6845E;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-orange-light {
+        background-color: #F9B65E;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-yellow {
+        background-color: #FFDD57;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-green-light {
+        background-color: #ABE050;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-green {
+        background-color: #7BCFA6;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    &__img-grey {
+        background-color: #B5B8C1;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+}
+
+.item1 { grid-area: header10; }
+
+.conditions-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 12.1rem;
+    
+    display: grid;
+    grid-template-areas:
+      'header1 header2 header3 header4 header5 header6'
+      'header7 header8 header9 header10 header10 header10';
+    grid-gap: 3.1rem;
+  }
+
+.item {
+    
+    padding-top: 0.4rem;
+    padding-left: 1.3rem;
+    font-size: 30px;
+    border-radius: 12px;
+    height: 10.4rem;
+    justify-content: space-between;
+    
+     &--light-blue {
+         background-color: rgba(127, 221, 240, 0.1);
+     }
+
+     &--blue {
+        background-color: rgba(95, 174, 236, 0.1);
+    }
+
+    &--violet {
+        background-color: rgba(155, 120, 253, 0.08);
+    }
+
+    &--pink {
+        background-color: rgba(239, 156, 208, 0.1);
+    }
+
+    &--orange {
+        background-color: rgba(246, 132, 94, 0.1);
+    }
+
+    &--orange-light {
+        background-color: rgba(249, 182, 94, 0.1);
+    }
+
+    &--yellow {
+        background-color: rgba(255, 221, 87, 0.1);
+    }
+
+    &--green-light {
+        background-color: rgba(171, 224, 80, 0.1);
+    }
+
+    &--green {
+        background-color: rgba(123, 207, 166, 0.1);
+    }
+
+}
+
+.item1 {
+    padding-top: 0.4rem;
+    padding-left: 1.3rem;
+    font-size: 30px;
+    border-radius: 12px;
+    height: 10.4rem;
+    background-color: #F7F8FC;
+}
+
+@media screen and (max-width: $md) {
+    .conditions {
+        padding-top: 4rem;
+        &__text {
+            margin-top: 0.6rem;
+            font-size: 3rem;
+        }
+
+        &__description {
+            margin-top: 1rem;
+        }
+
+    }
+
+    .conditions-grid {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-areas:
+          'header1 header2 header3 header4 header5 header6'
+          'header7 header8 header9 header10 header10 header10';
+        grid-gap: 1.1rem;
+      }
+}
+
+@media screen and (max-width: $sm) {
+    .conditions-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        grid-template-areas:
+            'header1 header2 header3 header4'
+            'header5 header6 header7 header8'
+            'header9 header10 header10 header10';
+            grid-gap: 1.1rem;  
+            grid-gap: 3.3rem;
+      }
+
+       
+}
+
+@media screen and (max-width: $xs) {
+    .conditions-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'header1 header2 header3'
+            'header4 header5 header6'
+            'header7 header8 header9'
+            'header10 header10 header10';
+      }
+
+      .conditions {
+          &__newtext {
+              padding-top: 2.2rem;
+              
+          }
+      }
+      
+      .item {
+          padding-left: 0.5rem;
+      }
+}
+
+  
