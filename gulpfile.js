@@ -21,8 +21,6 @@ gulp.task('favicon', require('./gulp-tasks/favicon')(gulp, options, plugins));
 gulp.task('watch', require('./gulp-tasks/watch')(gulp, options, plugins));
 gulp.task('serve', require('./gulp-tasks/serve')(gulp, options, plugins));
 
-
-//сборка dev
 gulp.task('default',
 	gulp.series(
 		gulp.parallel(
@@ -38,7 +36,6 @@ gulp.task('default',
 		),
 ));
 
-//сборка build
 gulp.task('build',
 	gulp.series(
 		gulp.parallel(
@@ -48,7 +45,6 @@ gulp.task('build',
 			'images:prod',
 			'svg',
 			'vendors:js',
-			//'vendors:js_build',
 			'favicon',
 		),
 	));

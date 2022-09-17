@@ -14,7 +14,6 @@ module.exports = function (gulp, options, plugins) {
 			.pipe(plugins.cheerio({
 				run: function ($, el) {
 					$('[fill]').removeAttr('fill');
-					// $('[stroke]').removeAttr('stroke');
 					$('[style]').removeAttr('style');
 				},
 				parserOptions: {xmlMode: true}

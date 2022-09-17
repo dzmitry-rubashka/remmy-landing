@@ -30,7 +30,6 @@ module.exports = {
 			images: './src/assets/imgs/**/*.{png,jpg,jpeg,gif,svg,webp}',
 			sprites: './src/assets/svg/',
 			favicon: './src/assets/favicon/*.{png,ico,xml,webmanifest}',
-			// fonts: './src/assets/fonts/**/*',
 		},
 		watch: {
 			pug: './src/pug/**/*.pug',

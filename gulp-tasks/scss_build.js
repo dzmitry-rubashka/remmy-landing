@@ -4,7 +4,6 @@ module.exports = function (gulp, options, plugins) {
 
     return function (cb) {
         gulp.src([options.path.src.scss + 'app.scss',
-            //options.path.src.scss+'components/*.scss'
         ])
             .pipe(plugins.sass().on('error', plugins.sass.logError))//преобразование scss к css
             .pipe(plugins.concat('app.css'))
